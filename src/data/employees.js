@@ -1,13 +1,13 @@
 export const employees = [
     {
-      first_name: "Rex",
+      first_name: "Rexone",
       last_name: "Dallimare",
       gender: "Male",
       department: "Legal",
       email_address: "rdallimare0@posterous.com"
     },
     {
-      first_name: "Clywd",
+      first_name: "Rex",
       last_name: "Scarce",
       gender: "Male",
       department: "Product Management",

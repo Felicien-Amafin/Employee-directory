@@ -1,4 +1,5 @@
 export default function Form({selectOptions, inputsValues, handleChange}) {
+    
     return(
         <form id="form" onSubmit={handleChange}>
             <input 
@@ -15,8 +16,8 @@ export default function Form({selectOptions, inputsValues, handleChange}) {
                 value={inputsValues.last_name}
                 onChange={handleChange}
             />
-            <select id="gender" onChange={handleChange}>
-                <option value={inputsValues.gender}>Select gender</option>
+            <select id="gender" value={inputsValues.gender} onChange={handleChange}>
+                <option value="">Select a gender</option>
                 {selectOptions.gender.map((opt, index) => {
                     return <option 
                                 key={`${opt}-${index}`}
@@ -26,8 +27,8 @@ export default function Form({selectOptions, inputsValues, handleChange}) {
                             </option>
                 })}
             </select>
-            <select id="department" onChange={handleChange}>
-                <option value={inputsValues.department}>Select departement</option>
+            <select id="department" value={inputsValues.department} onChange={handleChange}>
+                <option value="">Select a departement</option>
                 {selectOptions.department.map((opt, index) => {
                     return <option 
                                 key={`${opt}-${index}`}

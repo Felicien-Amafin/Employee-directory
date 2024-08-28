@@ -1,21 +1,22 @@
 import Form from './Form'
 import EmployeesList from './EmployeesList'
 import { useState } from 'react'
+import { initInputsValues } from '../utility/functions';
 
-
-export default function Directory({selectOptions, formValues}) {
-    const [inputsValues, setInputsValues] = useState(formValues);
-    console.log(inputsValues)
-
+export default function Directory({selectOptions, initInput}) {
+    
+    const [inputsValues, setInputsValues] = useState(initInput);
+   
     function handleChange(event) {
         if(event.target.id === 'form') {
             event.preventDefault();
             event.target.reset();
-            setInputsValues(formValues);
+            const resetInputs = initInputsValues();
+            setInputsValues(resetInputs);
             return;
         }
         const prop = event.target.id;
-        const value = event.target.value;
+        const value = event.target.value.trim();
 
         setInputsValues((inputsValues)=> {
             const newInputsValues = {...inputsValues, [prop]:value};

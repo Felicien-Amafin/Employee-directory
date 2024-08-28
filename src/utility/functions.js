@@ -16,3 +16,12 @@ export function getSelectOptions(employees) {
     })
     return selectOptions
 }
+
+export function initInputsValues() {
+    return {
+        first_name: '', 
+        last_name: '', 
+        gender: '',
+        department: ''
+    };
+}
