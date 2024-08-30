@@ -1,8 +1,40 @@
-# React + Vite
+# Employee's directory
+<br/>
+Basic employee's directory. It allows to find co-workers by entering any of the following search criterions. I've used useState React Hook to manage state changing.
+<br/>
+<br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Languages and Tools
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div>
+<img align="left" alt="Javascript" width="30px" style="padding right:20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">  
+
+<img align="left" alt="Javascript" width="30px" style="padding right:20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"> 
+
+<img align="left" alt="Javascript" width="30px" style="padding right:400px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"> 
+
+<img align="left" alt="Javascript" width="30px" style="padding right:400px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg">  
+</div> 
+<br/>
+<br/>
+
+## Installation & Testing
+<br/>
+
+`To install the project: first run "npm install".To test the project: run "npm run dev".`
+<br/>
+<br/>
+
+## Preview
+<br/>
+
+![employeeD1](https://github.com/user-attachments/assets/748ea2e3-469f-43c9-bd51-499344d57dba)
+
+![employeeD4](https://github.com/user-attachments/assets/9de827cc-d3f0-4f00-89e9-e7955c4bfbad)
+
+![employeeD3](https://github.com/user-attachments/assets/a0b87642-c3d5-4d83-8801-6cbfecb035f4)
+
+
+
