@@ -1,5 +1,6 @@
 import { employees } from '../data/employees'
 import EmployeeProfil  from './EmployeeProfil'
+import classes from './EmployeesList.module.css'
 
 export default function EmployeesList({inputsValues}) {
     
@@ -45,21 +46,20 @@ export default function EmployeesList({inputsValues}) {
 
     return(
         <>
-           {result.length === 0 && <>
+           {result.length === 0 && <div className={classes.list}>
                 <p>No result for following search:</p>
-                <ul>
+                <ul className={classes.error}>
                     {content.map((search, index)=> {
                         return <li key={index}>{search}</li>
                     })}
                 </ul>
-            </>
+            </div>
            }  
-           
-           {result.length > 0 && <>
-                {result.length === 100 ? <h3>All employees</h3>: null}
-                <ul>
+           {result.length > 0 && <div className={classes.list}>
+                {result.length === 100 ? <h3>{`All employees (${result.length})`}</h3>: null}
+                <ul className={classes.cardList}>
                     {content.map((employee, index)=> {
-                        return <li key= {`${index}-employee`}>
+                        return <li key= {`${index}-employee`} className={classes.card}>
                             <EmployeeProfil 
                                 firstName={employee.first_name} 
                                 lastName={employee.last_name} 
@@ -67,11 +67,10 @@ export default function EmployeesList({inputsValues}) {
                                 department={employee.department} 
                                 emailAdd={employee.email_address} 
                             />
-                            <br/>
                         </li>
                     })}
                 </ul>
-           </>}
+           </div>}
         </> 
     )
 }

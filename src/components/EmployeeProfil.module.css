@@ -1,0 +1,27 @@
+ol .name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(179, 37, 37); 
+}
+
+ol li {
+    font-size: 0.875rem;
+    list-style: none;
+    padding: 10px;
+    text-wrap: wrap;
+}
+
+ol li span {
+    overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+
+    ol .name {
+        font-size: 1.125rem;
+    }
+    
+    ol li {
+        font-size: 1rem;
+    }
+}

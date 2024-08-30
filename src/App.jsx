@@ -9,9 +9,13 @@ function App() {
   return (
     <>
       <header>
-        <h1>Smith & sons industry</h1>
+        <div className='flex-center'>
+          <h1>Smith & sons industry</h1>
+          <p>Infrastructure and buildings</p>
+        </div>
       </header>
       <Directory 
+        className="directory"
         selectOptions={selectOptions} 
         initInput={initInputsValues()}
       />

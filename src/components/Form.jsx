@@ -1,22 +1,31 @@
+import classes from './form.module.css'
+
 export default function Form({selectOptions, inputsValues, handleChange}) {
     
     return(
-        <form id="form" onSubmit={handleChange}>
+        <form id="form" className={classes.form} onSubmit={handleChange}>
             <input 
+                className={classes.formEl}
                 id="first_name" 
                 type="text" 
                 placeholder="First name" 
                 value={inputsValues.first_name}
                 onChange={handleChange}
             />
-            <input 
+            <input
+                className={classes.formEl}
                 id="last_name" 
                 type="text"  
                 placeholder="Last name" 
                 value={inputsValues.last_name}
                 onChange={handleChange}
             />
-            <select id="gender" value={inputsValues.gender} onChange={handleChange}>
+            <select 
+                className={classes.formEl}
+                id="gender" 
+                value={inputsValues.gender} 
+                onChange={handleChange}
+            >
                 <option value="">Select a gender</option>
                 {selectOptions.gender.map((opt, index) => {
                     return <option 
@@ -27,7 +36,12 @@ export default function Form({selectOptions, inputsValues, handleChange}) {
                             </option>
                 })}
             </select>
-            <select id="department" value={inputsValues.department} onChange={handleChange}>
+            <select
+                className={classes.formEl}
+                id="department" 
+                value={inputsValues.department} 
+                onChange={handleChange}
+            >
                 <option value="">Select a departement</option>
                 {selectOptions.department.map((opt, index) => {
                     return <option 
@@ -38,7 +52,7 @@ export default function Form({selectOptions, inputsValues, handleChange}) {
                             </option>
                 })}
             </select>
-            <button type="submit">reset</button>
+            <button type="submit">Rest</button>
         </form>
     )
 }

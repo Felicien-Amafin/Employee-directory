@@ -1,9 +1,10 @@
+import Title from './Title';
 import Form from './Form'
 import EmployeesList from './EmployeesList'
 import { useState } from 'react'
 import { initInputsValues } from '../utility/functions';
 
-export default function Directory({selectOptions, initInput}) {
+export default function Directory({className, selectOptions, initInput}) {
     
     const [inputsValues, setInputsValues] = useState(initInput);
    
@@ -25,16 +26,18 @@ export default function Directory({selectOptions, initInput}) {
     }
 
     return(
-        <section>
-            <div>
-                <h2>Employee directory</h2>
-                <p>Stay in touch with your co-workers</p>
+        <section className={className}>
+            <div className='search'>
+                <Title
+                    title="Employees' directory"
+                    para="Stay in touch with your co-workers"
+                />
+                <Form 
+                    selectOptions={selectOptions} 
+                    inputsValues={inputsValues}
+                    handleChange={handleChange}
+                />
             </div>
-            <Form 
-                selectOptions={selectOptions} 
-                inputsValues={inputsValues}
-                handleChange={handleChange}
-            />
             <EmployeesList 
                 inputsValues={inputsValues}
             />

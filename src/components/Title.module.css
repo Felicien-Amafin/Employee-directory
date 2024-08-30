@@ -1,0 +1,31 @@
+.title {
+    margin-bottom: 40px;
+}
+  
+.title h2 {
+    margin-bottom: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.375rem;
+    text-transform: capitalize;
+    color: rgb(179, 37, 37);
+}
+
+.title p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: rgb(121, 119, 119);
+}
+
+@media screen and (min-width: 768px) {
+    .title h2 {
+        font-size: 1.50rem;
+    }
+    
+    .title p {
+        font-size: 1.125rem;
+    }
+}

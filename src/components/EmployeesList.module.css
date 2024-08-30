@@ -1,0 +1,43 @@
+.list {
+    font-family: "Quicksand", sans-serif;
+    padding: 40px;
+}
+
+.list h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0 0 30px 20px ;
+    color: rgb(102, 101, 101);
+}
+
+.list .cardList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.list p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: rgb(223, 20, 20);
+}
+
+.list .error li {
+    font-size: 0.875rem;
+    padding: 10px 10px 10px 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+.list ul .card {
+    padding: 10px;
+    background-color: white;
+    list-style: none;
+}
+
