@@ -23,7 +23,7 @@ Basic employee's directory. It allows to find co-workers by entering any of the 
 ## Installation & Testing
 <br/>
 
-`To install the project: first run "npm install".To test the project: run "npm run dev".`
+`To install the project: first run "npm install".To launch the project in local server: run "npm run dev".`
 <br/>
 <br/>
 
